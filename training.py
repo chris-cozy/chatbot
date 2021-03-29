@@ -24,6 +24,10 @@ ignore_letters = ['?', '!', '.', ',']
 for intent in intents['intents']:
     for pattern in intent['patterns']:
         #this splits up the phrase into a collection of individual words
-        word_list = nltk.tokenize(pattern)
+        word_list = nltk.word_tokenize(pattern)
         word.append(word_list)
-        documents.append((word_list), intent['tag'])
+        documents.append((word_list, intent['tag']))
+        if intent['tag'] not in classes:
+            classes.append(intent['tag'])
+
+print(documents)
