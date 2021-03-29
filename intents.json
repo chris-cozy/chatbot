@@ -1,0 +1,16 @@
+{
+    "intents": [
+        {"tag": "greetings",
+        "patterns": ["hello", "hey", "hi", "what's up?", "good day", "how's it going?"],
+        "responses":["Hello!", "Hey!", "What can I do for you?"]
+        },
+        {"tag": "goodbye",
+        "patterns": ["goodbye", "bye", "goodnight", "im leaving", "see ya", "talk to you later"],
+        "responses": ["Goodbye!", "Talk to you later!", "Bye!"]
+        },
+        {"tag": "name",
+        "patterns": ["whats your name?", "what should I call you?", "who are you?", "do you have a name?"],
+        "responses": ["You can call me Kaede!", "I'm Kaede!", "My name is Kaede!"]
+        }
+    ]
+}
