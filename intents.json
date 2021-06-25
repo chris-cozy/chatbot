@@ -35,6 +35,10 @@
         {"tag": "okay",
         "patterns": ["how are you?", "how are you doing?", "how are you feeling"],
         "responses": ["I'm okay", "I'm doing well", "I'm good", "I'm doing okay"]
+        },
+        {"tag": "identity",
+        "patterns": ["what are you?", "what are you"],
+        "responses": ["I am an artificial intelligence chatbot program.", "I'm an artificial intelligence chatbot program", "I'm a neural network driven chatbot", "I am a machine learning chatbot"]
         }
     ]
 }
