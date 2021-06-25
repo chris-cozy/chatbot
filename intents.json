@@ -39,6 +39,14 @@
         {"tag": "identity",
         "patterns": ["what are you?", "what are you"],
         "responses": ["I am an artificial intelligence chatbot program.", "I'm an artificial intelligence chatbot program", "I'm a neural network driven chatbot", "I am a machine learning chatbot"]
+        },
+        {"tag": "blank",
+        "patterns": [" ", "  ", "   ", "   "],
+        "responses": ["I don't understand...", "did you mistype?", "I don't understand"]
+        },
+        {"tag": "code test",
+        "patterns": ["test"],
+        "responses": [""]
         }
     ]
 }

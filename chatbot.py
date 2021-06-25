@@ -48,16 +48,30 @@ def predict_class(sentence):
 def get_response(intents_list, intents_json):
     tag = intents_list[0]['intent']
     list_of_intents = intents_json['intents']
+
+    #added code to test if pieces of code work - successful. many more capabilities.
+    if tag == "code test":
+        print("test success")
+
+    
+
     for i in list_of_intents:
         if i['tag'] == tag:
             result = random.choice(i['responses'])
             break
     return result
 
-print("Jade is now running")
+print("Jade is now running\n")
+name = input("Enter name: ")
 
 while True:
     message = input("")
     ints = predict_class(message)
     res = get_response(ints, intents)
     print("Jade: " + res + "\n")
+
+
+#TO DO
+# make a user memory system
+# nested intents
+# #
