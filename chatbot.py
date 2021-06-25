@@ -15,8 +15,18 @@ words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 model = load_model('chatbotmodel.h5')
 
+#private variables for user file
+uregister = "users.json"
+
 #Now we have to create functions. We have all of the data but it is in 0s and 1s, have to convert it into a useable state
 #4 functions. Cleaning up sentences, Getting the bag of words, Predicting the class based on the sentence, Getting the response
+#LOADS USER DATA
+def user_data():
+    #opens json file and loads users
+    with open(uregister, "r") as f:
+        users = json.load(f)
+    return users
+
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -53,8 +63,6 @@ def get_response(intents_list, intents_json):
     if tag == "code test":
         print("test success")
 
-    
-
     for i in list_of_intents:
         if i['tag'] == tag:
             result = random.choice(i['responses'])
@@ -63,6 +71,12 @@ def get_response(intents_list, intents_json):
 
 print("Jade is now running\n")
 name = input("Enter name: ")
+users = user_data()
+# if name in users, log in, if not, add name to users
+# if name in users:
+# else:
+#     users[name]
+
 
 while True:
     message = input("")

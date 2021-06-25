@@ -1,0 +1,4 @@
+To add a user recongition system (like memory)
+- Ask for name
+- if name is in the list, set user to name
+- if name is not within registered users list, add name to list
