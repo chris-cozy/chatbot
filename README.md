@@ -1,12 +1,14 @@
 # Python Chatbot
 
 <h2>Description</h2>
-Python scripts containing a natural language processing chatbot. Implemented using neural networks.
+Python scripts containing a natural language processing chatbot. Implemented using neural networks with tensorflow. The responses are hard-coded.
 <br>
 <h2>Installation</h2>
-Installation/run instructions to be added soon.
+The training program needs to be run before the chatbot program. The training program sets up the intents, and saves the training data in the .h5 file, which the chatbot program uses.
 <br>
-<i>...</i>
+<i>python training.py</i>
+<br>
+<i>python chatbot.py</i>
 <br>
 <h2>Tech Stack</h2>
 <div id ="badges">
@@ -18,3 +20,4 @@ Installation/run instructions to be added soon.
 More complexity and intents may be added in the future.
 Based off of the tutorial: https://www.youtube.com/watch?v=1lwddP0KUEg&list=PLYFNQ7RWsZGY4zk0Ml0o8U460llh5mXYq&index=5
 <br>
+Not adept in tensorflow or the processes going on, still learning.
